@@ -6,7 +6,7 @@ document.querySelectorAll(".accordion_question_answer").forEach( q =>{
             }else{
                 document.querySelectorAll(".accordion_question_answer").forEach( y =>{
                     
-                    if(y.classList.contains('active') == true){
+                    if(y.classList.contains('active') == true && y!=q){
                         y.classList.remove('active')
                     }else{
                         q.classList.add('active')
